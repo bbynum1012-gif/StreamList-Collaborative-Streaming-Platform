@@ -490,11 +490,6 @@ export default function App() {
             total={total}
             onBack={() => setActiveTab('cart')}
           />
-        ) : activeTab === 'payment' ? (
-          <CreditCardCheckout
-            total={total}
-            onBack={() => setActiveTab('cart')}
-          />
         ) : activeTab !== 'cart' ? (
           <section className="catalog">
             <div className="section-heading">
